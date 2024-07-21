@@ -24,7 +24,7 @@ const ListTodo = () => {
 
     const DeleteTodo = async (id) => {
         try {
-            await fetch(`http://localhost:5000/todos/${id}`,{
+            await fetch(`https://todowithusers.onrender.com/todos/${id}`,{
                 method: "DELETE",
                 headers: {token: localStorage.token}
             });
