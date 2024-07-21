@@ -6,7 +6,7 @@ const ListTodo = () => {
 
     const getTodos = async()=>{
         try {
-            const response = await fetch("http://localhost:5000/todos",{
+            const response = await fetch("https://todowithusers.onrender.com/todos",{
                 method: "GET",
                 headers: {token: localStorage.token}
             });
