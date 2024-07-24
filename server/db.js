@@ -2,7 +2,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 dotenv.config();
 
-const connectionString = "postgres://todo%20list_owner:UfPWtTMAYV34@ep-shiny-lake-a1jsbhbj-pooler.ap-southeast-1.aws.neon.tech/todo%20list?sslmode=require"
+const connectionString = "postgres://todo%20list_owner:UfPWtTMAYV34@ep-shiny-lake-a1jsbhbj-pooler.ap-southeast-1.aws.neon.tech/todo%20list?idleTimeout=10000&sslmode=require"
 
 const db= new pg.Client(connectionString)
 
